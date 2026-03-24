@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Webkul\PluginManager\Console\Commands;
 
 use Illuminate\Console\Command;
@@ -35,9 +33,6 @@ class FindMissingTranslations extends Command
         '/resources/lang',
     ];
 
-    /**
-     * Supported locales that must exist in all packages.
-     */
     protected const SUPPORTED_LOCALES = [
         'en',
         'ar',
